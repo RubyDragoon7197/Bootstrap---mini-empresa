@@ -4,25 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danibeads</title>
-
-    <!--
-    ═══════════════════════════════════════════════════════════
-    PASO 1: CÓMO SE CONECTA BOOTSTRAP
-    ═══════════════════════════════════════════════════════════
-    Bootstrap se agrega desde internet con una etiqueta <link>.
-    El CSS va en el <head> y el JS va al final del <body>.
-    ═══════════════════════════════════════════════════════════
-    -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!--
-    ═══════════════════════════════════════════════════════════
-    PASO 2: TUS PROPIOS ESTILOS (después de Bootstrap)
-    ═══════════════════════════════════════════════════════════
-    Siempre pon tu CSS DESPUÉS de Bootstrap para que tus
-    estilos puedan sobreescribir los de Bootstrap.
-    ═══════════════════════════════════════════════════════════
-    -->
     <style>
         /* Las variables CSS guardan colores reutilizables */
         :root {
@@ -75,18 +57,8 @@
 </head>
 <body>
 
-<!-- ══════════════════════════════════════════════════════════
-     COMPONENTE: BARRA DE NAVEGACIÓN
-     ══════════════════════════════════════════════════════════
-     Clases clave de Bootstrap:
-     • navbar → activa el componente barra de navegación
-     • navbar-expand-lg → en pantallas grandes se muestra horizontal,
-                           en móvil se colapsa en un menú hamburguesa
-     • navbar-light → iconos y texto oscuros (para fondo claro)
-     • bg-white → fondo blanco (clase de Bootstrap)
-     • sticky-top → la barra se queda fija al hacer scroll
-     • shadow-sm → sombra suave debajo de la barra
-     ══════════════════════════════════════════════════════════ -->
+ <!-- COMPONENTE: BARRA DE NAVEGACIÓN -->
+
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
 
     <!-- .container centra el contenido con márgenes automáticos -->
@@ -128,21 +100,6 @@
     </div>
 </nav>
 
-
-<!-- ══════════════════════════════════════════════════════════
-     SECCIÓN 1: HERO (Encabezado principal)
-     ══════════════════════════════════════════════════════════
-     Clases clave:
-     • text-center → centra el texto
-     • py-5 → padding vertical grande (arriba y abajo)
-     • display-4 → texto muy grande (tamaño de titulo héroe)
-     • fw-bold → negrita (font-weight: bold)
-     • lead → párrafo más grande que el normal
-     • btn → base de cualquier botón Bootstrap
-     • btn-dark → botón de color oscuro
-     • btn-lg → botón grande
-     • mt-3 → margen arriba (margin-top)
-     ══════════════════════════════════════════════════════════ -->
 <header class="bg-amarillo text-center py-5">
     <div class="container">
         <img src="imagenes/logo.png" alt="Logo Danibeads" class="logo-hero">
@@ -156,19 +113,8 @@
 </header>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     SECCIÓN 2: MARCA Y CONCEPTO
-     ══════════════════════════════════════════════════════════
-     Clases clave:
-     • container → caja centrada con ancho máximo
-     • row → fila del sistema de cuadrícula (grid)
-     • col-md-6 → columna que ocupa 6/12 en pantallas medianas
-                      (en móvil ocupa el 100% automáticamente)
-     • mb-4 → margen abajo (margin-bottom)
-     • p-4 → padding en todos los lados
-     • rounded → bordes redondeados
-     • list-unstyled→ quita los puntos de la lista
-     ══════════════════════════════════════════════════════════ -->
+<!-- SECCIÓN 2: MARCA Y CONCEPTO -->
+
 <section class="mi-seccion" id="marca">
     <div class="container">
 
@@ -217,18 +163,7 @@
 </section>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     SECCIÓN 3: GAMA CROMÁTICA
-     ══════════════════════════════════════════════════════════
-     Aquí practicamos el grid con 4 columnas.
-     Clases clave:
-     • col-sm-6 → 2 columnas en pantallas pequeñas
-     • col-lg-3 → 4 columnas en pantallas grandes
-     • g-4 → gap (espacio entre columnas y filas)
-     • text-center → texto centrado
-     • rounded-pill → bordes muy redondeados (pastilla)
-     • text-muted → texto gris suave
-     ══════════════════════════════════════════════════════════ -->
+<!--SECCIÓN 3: GAMA CROMÁTICA-->
 <section class="mi-seccion bg-white" id="colores">
     <div class="container">
 
@@ -284,12 +219,7 @@
 </section>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     SECCIÓN 4: TIPOGRAFÍA
-     ══════════════════════════════════════════════════════════
-    Esta sección explica por qué elegimos cada estilo tipográfico
-    según la identidad de la marca: natural, artesanal y cercana.
-     ══════════════════════════════════════════════════════════ -->
+<!--SECCIÓN 4: TIPOGRAFÍA-->
 <section class="mi-seccion" id="tipografia">
     <div class="container">
 
@@ -347,18 +277,7 @@
 </section>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     SECCIÓN 5: TAMAÑOS Y PLANIMETRÍA
-     ══════════════════════════════════════════════════════════
-     Clases clave:
-     • align-items-center → alinea verticalmente al centro (en row)
-     • justify-content-center → centra horizontalmente
-     • table → tabla Bootstrap básica
-     • table-bordered → tabla con bordes
-     • table-striped → filas alternadas con color gris suave
-     • alert → caja de alerta/información
-     • alert-warning → alerta amarilla
-     ══════════════════════════════════════════════════════════ -->
+<!--SECCIÓN 5: TAMAÑOS Y PLANIMETRÍA-->
 <section class="mi-seccion bg-white" id="tamanos">
     <div class="container">
 
@@ -440,18 +359,7 @@
 </section>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     SECCIÓN 6: PLANIMETRÍA DEL LOGO
-     ══════════════════════════════════════════════════════════
-     Clases clave:
-     • border → agrega borde
-     • border-2 → grosor del borde
-     • border-warning → borde amarillo
-     • border-dashed → (CSS propio, Bootstrap no lo tiene)
-     • mx-auto → centra horizontalmente (margin: auto)
-     • d-flex → activa flexbox
-     • gap-3 → espacio entre elementos flex
-     ══════════════════════════════════════════════════════════ -->
+<!--SECCIÓN 6: PLANIMETRÍA DEL LOGO-->
 <section class="mi-seccion" id="planimetria">
     <div class="container">
 
@@ -516,17 +424,7 @@
 </section>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     SECCIÓN 7: COLECCIONES
-     ══════════════════════════════════════════════════════════
-     Clases clave:
-     • card → componente tarjeta de Bootstrap
-     • card-body → área de contenido de la tarjeta
-     • card-title → título dentro de la tarjeta
-     • card-text → párrafo dentro de la tarjeta
-     • h-100 → height: 100% (iguala la altura de las cards)
-     • shadow-sm → sombra pequeña
-     ══════════════════════════════════════════════════════════ -->
+<!--SECCIÓN 7: COLECCIONES-->
 <section class="mi-seccion bg-white" id="colecciones">
     <div class="container">
 
@@ -588,21 +486,7 @@
 </section>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     SECCIÓN 8: PRODUCTOS MÁS VENDIDOS
-     ══════════════════════════════════════════════════════════
-     Aquí practicamos el grid responsivo con 4 columnas.
-     col-6 col-md-4 col-lg-3 significa:
-     • Móvil (< 768px): 2 columnas (col-6 = 6/12)
-     • Tablet (≥ 768px): 3 columnas (col-md-4 = 4/12)
-     • Desktop (≥ 992px): 4 columnas (col-lg-3 = 3/12)
-
-     Nuevas clases:
-     • badge → etiqueta pequeña de color
-     • bg-warning → fondo amarillo Bootstrap
-     • text-dark → texto oscuro
-     • text-end → alinea texto a la derecha
-     ══════════════════════════════════════════════════════════ -->
+<!--SECCIÓN 8: PRODUCTOS MÁS VENDIDOS-->
 <section class="mi-seccion" id="productos">
     <div class="container">
 
@@ -679,14 +563,7 @@
 </section>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     SECCIÓN 9: PROCESO / PASOS
-     ══════════════════════════════════════════════════════════
-     Clases clave:
-     • bg-dark → fondo negro de Bootstrap
-     • text-white → texto blanco
-     • text-center → centrado
-     ══════════════════════════════════════════════════════════ -->
+<!--SECCIÓN 9: PROCESO / PASOS-->
 <section class="mi-seccion bg-oscuro" id="proceso">
     <div class="container text-white text-center">
 
@@ -737,14 +614,7 @@
 </section>
 
 
-<!-- ══════════════════════════════════════════════════════════
-     SECCIÓN 10: NEWSLETTER + FOOTER
-     ══════════════════════════════════════════════════════════
-     Clases clave nuevas:
-     • input-group → agrupa un input con un botón
-     • form-control → estilo Bootstrap para inputs
-     • justify-content-center → centra elementos en flexbox/grid
-     ══════════════════════════════════════════════════════════ -->
+<!--SECCIÓN 10: NEWSLETTER + FOOTER-->
 
 <!-- Newsletter -->
 <section class="mi-seccion bg-white text-center">
@@ -780,12 +650,10 @@
 
 
 <!--
-═══════════════════════════════════════════════════════════
 PASO FINAL: JavaScript de Bootstrap
-═══════════════════════════════════════════════════════════
+
 Siempre al final del <body>. Necesario para que funcionen
 el menú hamburguesa, modales, tooltips, etc.
-═══════════════════════════════════════════════════════════
 -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
